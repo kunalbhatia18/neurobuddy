@@ -13,15 +13,18 @@ const Team = () => {
           <div className="team-member">
             <div
               className="member-photo"
-              style={{ backgroundImage: "url('path-to-photo1.jpg')" }}
+              style={{ backgroundImage: "url('profile-pic.png')" }}
             ></div>
-            <h3 className="member-name">John Doe</h3>
-            <p className="member-role">CEO & Founder</p>
+            <h3 className="member-name">Kunal Bhatia</h3>
+            <p className="member-role">Founder & Innovator</p>
             <p className="member-bio">
-              A visionary leader with 10+ years in AI-driven health solutions.
+              Passionate about neuroscience and problem-solving, Kunal founded
+              NeuroBuddy to empower individuals with ADHD to thrive. He&apos;s
+              driven by curiosity and a vision to create impactful,
+              human-centered technology.
             </p>
             <a
-              href="https://www.linkedin.com/in/johndoe"
+              href="https://www.linkedin.com/in/kunalbhatia18"
               className="linkedin-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +32,8 @@ const Team = () => {
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
-          <div className="team-member">
+
+          {/* <div className="team-member">
             <div
               className="member-photo"
               style={{ backgroundImage: "url('path-to-photo2.jpg')" }}
@@ -68,12 +72,12 @@ const Team = () => {
             >
               <i className="fab fa-linkedin"></i>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Advisors Section */}
-      <div className="advisors-container">
+      {/* <div className="advisors-container">
         <h2 className="advisors-title">Advisors</h2>
         <div className="advisors-grid">
           <div className="advisor-card">
@@ -116,7 +120,7 @@ const Team = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
