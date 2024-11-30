@@ -1,0 +1,194 @@
+/* Vision Section */
+.vision-section {
+  background: linear-gradient(
+    145deg,
+    #121212,
+    #1a1a1d
+  ); /* Consistent dark gradient */
+  padding: 100px 20px;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vision-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.vision-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  color: #b0b0b0;
+}
+
+.impact-statement {
+  margin: 40px 0;
+}
+
+.impact-quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #63d471; /* Mint green to make it stand out */
+  margin-bottom: 50px;
+}
+
+.vision-impact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Enables responsive wrapping */
+}
+
+.impact-card {
+  background: #1a1a1d; /* Consistent card background */
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.impact-icon {
+  font-size: 2.5rem;
+  color: #63d471; /* Highlighted icon color */
+  margin-bottom: 15px;
+}
+
+.impact-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.impact-text {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+/* Tablets and Medium Screens */
+@media (max-width: 1024px) {
+  .vision-title {
+    font-size: 2.4rem;
+  }
+
+  .vision-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .impact-quote {
+    font-size: 1.3rem;
+  }
+
+  .vision-impact-grid {
+    gap: 20px; /* Reduced spacing for medium screens */
+  }
+
+  .impact-card {
+    padding: 25px;
+    max-width: 260px; /* Slightly reduced size */
+  }
+
+  .impact-icon {
+    font-size: 2.2rem;
+  }
+
+  .impact-title {
+    font-size: 1.1rem;
+  }
+
+  .impact-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .vision-title {
+    font-size: 2rem;
+  }
+
+  .vision-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .impact-quote {
+    font-size: 1.2rem;
+  }
+
+  .vision-impact-grid {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px;
+  }
+
+  .impact-card {
+    padding: 20px;
+    max-width: 100%; /* Full-width cards for smaller screens */
+  }
+
+  .impact-icon {
+    font-size: 2rem;
+  }
+
+  .impact-title {
+    font-size: 1rem;
+  }
+
+  .impact-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .vision-title {
+    font-size: 1.8rem;
+  }
+
+  .vision-description {
+    font-size: 1rem;
+  }
+
+  .impact-quote {
+    font-size: 1.1rem;
+  }
+
+  .impact-card {
+    padding: 15px; /* Compact padding */
+    border-radius: 10px; /* Slightly smaller border radius */
+  }
+
+  .impact-icon {
+    font-size: 1.8rem;
+  }
+
+  .impact-title {
+    font-size: 0.9rem;
+  }
+
+  .impact-text {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,26 @@
+/* Global Breakpoints */
+:root {
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+}
+
+/* Responsive for mobile */
+@media (max-width: var(--mobile)) {
+  body {
+    font-size: 14px; /* Adjust base font size for smaller screens */
+    padding: 10px; /* Add some breathing room */
+  }
+}
+
+/* Responsive for tablets */
+@media (max-width: var(--tablet)) {
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 90%; /* Adjust container width */
+  }
+}

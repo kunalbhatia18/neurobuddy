@@ -1,0 +1,181 @@
+/* Problem Section Styles */
+.problem-section {
+  background: linear-gradient(
+    145deg,
+    #121212,
+    #1a1a1d
+  ); /* Consistent dark gradient */
+  color: #eaeaea;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.problem-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.problem-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.problem-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  color: #b0b0b0;
+}
+
+.problem-description .highlight {
+  color: #63d471; /* Green highlight for emphasis */
+  font-weight: 600;
+}
+
+.problem-points {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.problem-point {
+  background: #1a1a1d; /* Consistent card background */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  flex: 1;
+  max-width: 280px;
+  min-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-point:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e33;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #63d471;
+}
+
+.problem-point p {
+  font-size: 1rem;
+  color: #eaeaea;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+/* Tablets and Medium Screens */
+@media (max-width: 1024px) {
+  .problem-title {
+    font-size: 2rem;
+  }
+
+  .problem-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .problem-points {
+    gap: 15px; /* Reduce spacing between cards */
+  }
+
+  .problem-point {
+    max-width: 220px; /* Smaller max-width for cards on medium screens */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .icon-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .problem-point p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .problem-title {
+    font-size: 1.8rem;
+  }
+
+  .problem-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .problem-points {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px; /* Adjust spacing between stacked cards */
+  }
+
+  .problem-point {
+    max-width: 100%; /* Full-width cards on mobile */
+    padding: 15px;
+  }
+
+  .icon-container {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+  }
+
+  .problem-point p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .problem-title {
+    font-size: 1.5rem;
+  }
+
+  .problem-description {
+    font-size: 0.9rem;
+  }
+
+  .problem-point {
+    padding: 10px; /* Compact padding */
+    border-radius: 10px; /* Slightly smaller border radius */
+  }
+
+  .icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon {
+    font-size: 1.4rem;
+  }
+
+  .problem-point p {
+    font-size: 0.85rem;
+  }
+}

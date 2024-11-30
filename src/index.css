@@ -1,0 +1,6 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+button,
+a {
+  cursor: pointer; /* Changes the cursor to a hand on hover */
+}

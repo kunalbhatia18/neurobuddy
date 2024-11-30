@@ -1,0 +1,306 @@
+/* Team Section */
+.team-section {
+  background: linear-gradient(145deg, #121212, #1a1a1d);
+  color: #eaeaea;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.team-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  color: #b0b0b0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  background: #1a1a1d;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.member-photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid #63d471;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.member-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.member-role {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #63d471;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+.linkedin-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #63d471;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.linkedin-link:hover {
+  color: #76e08b;
+  transform: scale(1.1);
+}
+
+/* Advisors Section */
+.advisors-container {
+  margin-top: 60px; /* Reduced margin for smaller visual hierarchy */
+  text-align: center;
+}
+
+.advisors-title {
+  font-size: 2.2rem; /* Slightly smaller title than Team Section */
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Smaller cards */
+  gap: 20px;
+}
+
+.advisor-card {
+  background: #1a1a1d;
+  padding: 15px; /* Smaller padding */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.advisor-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.advisor-photo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px; /* Smaller photo with less margin */
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #63d471; /* Thinner border for advisors */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.advisor-name {
+  font-size: 1.1rem; /* Smaller text size */
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.advisor-role {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #63d471;
+}
+
+.advisor-bio {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #b0b0b0;
+}
+
+.linkedin-link {
+  margin-top: 8px; /* Smaller margin */
+  font-size: 1.2rem; /* Reduced icon size */
+  color: #63d471;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.linkedin-link:hover {
+  color: #76e08b;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .team-title,
+  .advisors-title {
+    font-size: 2.2rem;
+  }
+
+  .team-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .team-grid,
+  .advisors-grid {
+    gap: 20px;
+  }
+
+  .team-member,
+  .advisor-card {
+    padding: 15px;
+  }
+
+  .member-photo,
+  .advisor-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .member-name,
+  .advisor-name {
+    font-size: 1.1rem;
+  }
+
+  .member-role,
+  .advisor-role {
+    font-size: 0.95rem;
+  }
+
+  .member-bio,
+  .advisor-bio {
+    font-size: 0.85rem;
+  }
+
+  .linkedin-link {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-title,
+  .advisors-title {
+    font-size: 2rem;
+  }
+
+  .team-description {
+    font-size: 1rem;
+  }
+
+  .team-grid,
+  .advisors-grid {
+    grid-template-columns: 1fr; /* Single-column layout */
+    gap: 15px;
+  }
+
+  .team-member,
+  .advisor-card {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .member-photo,
+  .advisor-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .member-name,
+  .advisor-name {
+    font-size: 1rem;
+  }
+
+  .member-role,
+  .advisor-role {
+    font-size: 0.9rem;
+  }
+
+  .member-bio,
+  .advisor-bio {
+    font-size: 0.8rem;
+  }
+
+  .linkedin-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-title,
+  .advisors-title {
+    font-size: 1.8rem;
+  }
+
+  .team-description {
+    font-size: 0.9rem;
+  }
+
+  .team-member,
+  .advisor-card {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .member-photo,
+  .advisor-photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .member-name,
+  .advisor-name {
+    font-size: 0.9rem;
+  }
+
+  .member-role,
+  .advisor-role {
+    font-size: 0.85rem;
+  }
+
+  .member-bio,
+  .advisor-bio {
+    font-size: 0.75rem;
+  }
+
+  .linkedin-link {
+    font-size: 1.1rem;
+  }
+}
